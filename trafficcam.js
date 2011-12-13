@@ -1,6 +1,8 @@
 javascript:(function(){
-    var newWindow = window.open('','Calgary Traffic Cams');
-    newWindow.focus();
+    var pageTitle = 'Calgary Traffic Cams';
+
+    var newWindow = window.open('', pageTitle);
+    newWindow.document.head.innerHTML = '<title>' + pageTitle + '</title>';
 
     // City of Calgary currently has 79 (somewhat) active traffic cameras
     var numImages = 79;
