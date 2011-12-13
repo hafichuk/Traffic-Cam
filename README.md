@@ -11,7 +11,7 @@ In order to keep the javascript simple and not rely on external sources, it outp
 
 ## Installation & Usage
 
-To install the bookmarklet, create a bookmark in your browser then copy in the `trafficcam.min.js` source into the address location, or just drag this link into your bookmark folder: <a href="javascript:(function(){function e(){for(i=0;i<=b;i++){imgUrl=c.replace(/%d/,i);a.document.getElementById("cam_"+i).src=imgUrl}}function d(){a.document.body.innerHTML="";for(i=0;i<=b;i++){imgUrl=c.replace(/%d/,i);a.document.write('<img id="cam_'+i+'" style="float: left; margin: 5px;" src="'+imgUrl+'" /> ')}}var a=window.open("","Calgary Traffic Cams");a.focus();var b=79;var c="http://trafficcam.calgary.ca/loc%d.jpg";d();setInterval(e,3e4)})()">Calgary Traffic Cams</a>
+To install the bookmarklet, create a bookmark in your browser then copy in the `trafficcam.min.js` source into the address location, or just drag this link into your bookmark folder: [Calgary Traffic Cams](javascript:(function(){function e(){for(i=0;i<=b;i++){imgUrl=c.replace(/%d/,i);a.document.getElementById("cam_"+i).src=imgUrl}}function d(){a.document.body.innerHTML="";for(i=0;i<=b;i++){imgUrl=c.replace(/%d/,i);a.document.write('<img id="cam_'+i+'" style="float: left; margin: 5px;" src="'+imgUrl+'" /> ')}}var a=window.open("","Calgary Traffic Cams");a.focus();var b=79;var c="http://trafficcam.calgary.ca/loc%d.jpg";d();setInterval(e,3e4)})())
 
 ## Minification
 
